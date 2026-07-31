@@ -35,7 +35,6 @@ img {
 }
 
 .boton {
- .boton {
   display: inline-block;
   background: linear-gradient(45deg, #ff1744, #ff5252);
   color: white;
@@ -45,29 +44,21 @@ img {
   font-weight: bold;
 }
 
-.plan {
-  background: #2a2a2a;
-  border: 2px solid #ff1744;
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.plan h3 {
-  color: #ff1744;
-  font-size: 28px;
+.boton:visited {
+  color: white;
 }
 
 hr {
   border: 1px solid #444;
   margin: 30px 0;
 }
+
 </style>
 
 </head>
 
 <body>
+
 <nav style="padding:15px;text-align:center;">
 <a href="#" style="color:white;margin:10px;text-decoration:none;">Inicio</a>
 <a href="#suscripciones" style="color:white;margin:10px;text-decoration:none;">Suscripciones</a>
@@ -75,23 +66,22 @@ hr {
 </nav>
 
 <h1>La Ardiente Diabla</h1>
+
 <p style="font-size:20px;">
 Bienvenido a La Ardiente Diabla 🔥<br>
 Contenido exclusivo y novedades próximamente.
+</p>
 
-
-
-
-
-  
 <img src="IMG-20260730-WA0001.jpg" alt="Portada" style="width:100%;max-width:600px;border-radius:15px;">
+
 <p>🔞 Contenido exclusivo para mayores de 18 años</p>
 
 <div class="caja">
 <h2>Bienvenido</h2>
 <p>Un espacio de contenido exclusivo y privado.</p>
 </div>
-<section id="suscripciones" class="caja">
+
+<div id="suscripciones" class="caja">
 <h2>🔥 Suscripciones VIP</h2>
 
 <h3>VIP Básico</h3>
@@ -109,15 +99,10 @@ Contenido exclusivo y novedades próximamente.
 <h3>VIP Deluxe</h3>
 <p>Todo el contenido disponible y acceso anticipado.</p>
 <a class="boton" href="#">Suscribirse - 29,99 €/mes</a>
-</section>
 
-<div class="caja">
-<h2>Suscripciones</h2>
-<p>Próximamente podrás acceder al contenido exclusivo.</p>
-<a class="boton" href="#">Suscribirse</a>
 </div>
 
-<div class="caja">
+<div id="contenido" class="caja">
 <h2>Contenido</h2>
 <p>Zona reservada para miembros.</p>
 </div>
