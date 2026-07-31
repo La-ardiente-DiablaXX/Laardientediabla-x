@@ -1,322 +1,227 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>La Ardiente Diabla</title>
-
-<style>
-body {
-  background: #0b0b0b;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 20px;
-}
-
-h1 {
-  color: #ff1744;
-  font-size: 42px;
-}
-
-img {
-  width: 100%;
-  max-width: 700px;
-  border-radius: 20px;
-  margin: 20px auto;
-}
-
-.caja {
-  background: #1c1c1c;
-  padding: 25px;
-  margin: 20px auto;
-  max-width: 700px;
-  border-radius: 20px;
-}
-
-.boton {
-  display: inline-block;
-  background: linear-gradient(45deg, #ff1744, #ff5252);
-  color: white;
-  padding: 15px 30px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.boton:visited {
-  color: white;
-}
-
-hr {
-  border: 1px solid #444;
-  margin: 30px 0;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<nav style="padding:15px;text-align:center;">
-<a href="#" style="color:white;margin:10px;text-decoration:none;">Inicio</a>
-<a href="#suscripciones" style="color:white;margin:10px;text-decoration:none;">Suscripciones</a>
-<a href="#contenido" style="color:white;margin:10px;text-decoration:none;">Contenido</a>
-</nav>
-
-<h1>La Ardiente Diabla</h1>
-
-<p style="font-size:20px;">
-Bienvenido a La Ardiente Diabla 🔥<br>
-Contenido exclusivo y novedades próximamente.
-</p>
-
-<img src="IMG-20260730-WA0001.jpg" alt="Portada" style="width:100%;max-width:600px;border-radius:15px;">
-
-<p>🔞 Contenido exclusivo para mayores de 18 años</p>
-
-<div class="caja">
-<h2>Bienvenido</h2>
-<p>Un espacio de contenido exclusivo y privado.</p>
-</div>
-
-<div id="suscripciones" class="caja">
-<h2>🔥 Suscripciones VIP</h2>
-
-<h3>VIP Básico</h3>
-<p>Acceso a fotos exclusivas.</p>
-
-<div id="paypal-button-container-P-5BK04551PY2836006NJWPDDA"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=ATg3ISEAvXdRN9_5qgEACGPQWtTGMhysve3wGsIAExRHyNZ-7PLY_Rsb-20sILNRO5zocIHhlZC5awGn&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
-      style: {
-          shape: 'pill',
-          color: 'white',
-          layout: 'horizontal',
-          label: 'subscribe'
-      },
-      createSubscription: function(data, actions) {
-        return actions.subscription.create({
-          /* Creates the subscription */
-          plan_id: 'P-5BK04551PY2836006NJWPDDA'
-        });
-      },
-      onApprove: function(data, actions) {
-        alert(data.subscriptionID); // You can add optional success message for the subscriber here
-      }
-  }).render('#paypal-button-container-P-5BK04551PY2836006NJWPDDA'); // Renders the PayPal button
-</script>
-
-<hr>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>La Ardiente Diabla</title>
-
-<style>
-body {
-  background: #0b0b0b;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 20px;
-}
-
-h1 {
-  color: #ff1744;
-  font-size: 42px;
-}
-
-img {
-  width: 100%;
-  max-width: 700px;
-  border-radius: 20px;
-  margin: 20px auto;
-}
-
-.caja {
-  background: #1c1c1c;
-  padding: 25px;
-  margin: 20px auto;
-  max-width: 700px;
-  border-radius: 20px;
-}
-
-.boton {
-  display: inline-block;
-  background: linear-gradient(45deg, #ff1744, #ff5252);
-  color: white;
-  padding: 15px 30px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.boton:visited {
-  color: white;
-}
-
-hr {
-  border: 1px solid #444;
-  margin: 30px 0;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<nav style="padding:15px;text-align:center;">
-<a href="#" style="color:white;margin:10px;text-decoration:none;">Inicio</a>
-<a href="#suscripciones" style="color:white;margin:10px;text-decoration:none;">Suscripciones</a>
-<a href="#contenido" style="color:white;margin:10px;text-decoration:none;">Contenido</a>
-</nav>
-
-<h1>La Ardiente Diabla</h1>
-
-<p style="font-size:20px;">
-Bienvenido a La Ardiente Diabla 🔥<br>
-Contenido exclusivo y novedades próximamente.
-</p>
-
-<img src="IMG-20260730-WA0001.jpg" alt="Portada" style="width:100%;max-width:600px;border-radius:15px;">
-
-<p>🔞 Contenido exclusivo para mayores de 18 años</p>
-
-<div class="caja">
-<h2>Bienvenido</h2>
-<p>Un espacio de contenido exclusivo y privado.</p>
-</div>
-
-<div id="suscripciones" class="caja">
-<h2>🔥 Suscripciones VIP</h2>
-
-<h3>VIP Básico</h3>
-<p>Acceso a fotos exclusivas.</p>
-
-<div id="paypal-button-container-P-5BK04551PY2836006NJWPDDA"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=ATg3ISEAvXdRN9_5qgEACGPQWtTGMhysve3wGsIAExRHyNZ-7PLY_Rsb-20sILNRO5zocIHhlZC5awGn&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
-      style: {
-          shape: 'pill',
-          color: 'white',
-          layout: 'horizontal',
-          label: 'subscribe'
-      },
-      createSubscription: function(data, actions) {
-        return actions.subscription.create({
-          /* Creates the subscription */
-          plan_id: 'P-5BK04551PY2836006NJWPDDA'
-        });
-      },
-      onApprove: function(data, actions) {
-        alert(data.subscriptionID); // You can add optional success message for the subscriber here
-      }
-  }).render('#paypal-button-container-P-5BK04551PY2836006NJWPDDA'); // Renders the PayPal button
-</script>
-
-<hr>
-<h3>VIP Deluxe</h3>
-<p>Todo el contenido disponible y acceso anticipado.</p>
-
-
-
-
-<script>
-paypal.Buttons({
-    style: {
-        shape: 'pill',
-        color: 'blue',
-        layout: 'horizontal',
-        label: 'subscribe'
-    },
-    createSubscription: function(data, actions) {
-        return actions.subscription.create({
-            plan_id: 'P-1TW19488DS417434WNJWPOXA'
-        });
-    },
-    onApprove: function(data, actions) {
-        alert(data.subscriptionID);
-    }
-}).render('#paypal-button-container-P-1TW19488DS417434WNJWPOXA');
-</script>
-
-<hr>
-<h3>VIP Premium</h3>
-  <video controls width="100%">
-  <source src="VID-20260116-WA0011.mp4" type="video/mp4">
-  </video>
-<p>Acceso a fotos y vídeos exclusivos.</p>
-<div id="paypal-button-container-P-84F62427RC905394DNJWOQMY"></div>
-
-<script>
-  paypal.Buttons({
-      style: {
-          shape: 'rect',
-          color: 'gold',
-          layout: 'vertical',
-          label: 'subscribe'
-      },
-      createSubscription: function(data, actions) {
-        return actions.subscription.create({
-          plan_id: 'P-84F62427RC905394DNJWOQMY'
-        });
-      },
-      onApprove: function(data, actions) {
-        alert(data.subscriptionID);
-      }
-  }).render('#paypal-button-container-P-84F62427RC905394DNJWOQMY');
-</script>
-
-<hr>
-
-
-<div id="paypal-button-container-P-1TW19488DS417434WNJWPOXA"></div>
-</div>
-
-<div id="contenido" class="caja">
-<h2>Contenido</h2>
-<p>Zona reservada para miembros.</p>
-</div>
-
-</body>
-<div class="caja">
-<h2>📸 Últimas novedades</h2>
-<p>Contenido exclusivo para suscriptores.</p>
-
-<img src="foto1.jpg" alt="Contenido exclusivo">
-
-<p>Próximamente más contenido.</p>
-</div>
-
-</body>
-<div class="caja">
-<h2>📸 Fotos exclusivas</h2>
-
-<p>Zona privada para suscriptores.</p>
-
-<div>
-<img <img src="IMG-20260731-WA0011.jpg" alt="Foto exclusiva">
-<img src="foto2.jpg" alt="Foto exclusiva">
-</div>
-
-</div>
-
-<div class="caja">
-<h2>🎥 Vídeos exclusivos</h2>
-
-<p>Contenido privado para miembros.</p>
-
-<p>Próximamente más vídeos.</p>
-
-
-</html>
-
-
-</html>
+<!DOCTYPE html>  <html>  
+<head>  
+<meta charset="UTF-8">  
+<title>La Ardiente Diabla</title>  <style>  
+body {  
+  background: #0b0b0b;  
+  color: white;  
+  font-family: Arial, sans-serif;  
+  text-align: center;  
+  margin: 0;  
+  padding: 20px;  
+}  
+  
+h1 {  
+  color: #ff1744;  
+  font-size: 42px;  
+}  
+  
+img {  
+  width: 100%;  
+  max-width: 700px;  
+  border-radius: 20px;  
+  margin: 20px auto;  
+}  
+  
+.caja {  
+  background: #1c1c1c;  
+  padding: 25px;  
+  margin: 20px auto;  
+  max-width: 700px;  
+  border-radius: 20px;  
+}  
+  
+.boton {  
+  display: inline-block;  
+  background: linear-gradient(45deg, #ff1744, #ff5252);  
+  color: white;  
+  padding: 15px 30px;  
+  border-radius: 10px;  
+  text-decoration: none;  
+  font-weight: bold;  
+}  
+  
+.boton:visited {  
+  color: white;  
+}  
+  
+hr {  
+  border: 1px solid #444;  
+  margin: 30px 0;  
+}  
+  
+</style>  </head>  <body>  <nav style="padding:15px;text-align:center;">  
+<a href="#" style="color:white;margin:10px;text-decoration:none;">Inicio</a>  
+<a href="#suscripciones" style="color:white;margin:10px;text-decoration:none;">Suscripciones</a>  
+<a href="#contenido" style="color:white;margin:10px;text-decoration:none;">Contenido</a>  
+</nav>  <h1>La Ardiente Diabla</h1>  <p style="font-size:20px;">  
+Bienvenido a La Ardiente Diabla 🔥<br>  
+Contenido exclusivo y novedades próximamente.  
+</p>  <img src="IMG-20260730-WA0001.jpg" alt="Portada" style="width:100%;max-width:600px;border-radius:15px;">  <p>🔞 Contenido exclusivo para mayores de 18 años</p>  <div class="caja">  
+<h2>Bienvenido</h2>  
+<p>Un espacio de contenido exclusivo y privado.</p>  
+</div>  <div id="suscripciones" class="caja">  
+<h2>🔥 Suscripciones VIP</h2>  <h3>VIP Básico</h3>  
+<p>Acceso a fotos exclusivas.</p>  <div id="paypal-button-container-P-5BK04551PY2836006NJWPDDA"></div>  
+<script src="https://www.paypal.com/sdk/js?client-id=ATg3ISEAvXdRN9_5qgEACGPQWtTGMhysve3wGsIAExRHyNZ-7PLY_Rsb-20sILNRO5zocIHhlZC5awGn&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>  
+<script>  
+  paypal.Buttons({  
+      style: {  
+          shape: 'pill',  
+          color: 'white',  
+          layout: 'horizontal',  
+          label: 'subscribe'  
+      },  
+      createSubscription: function(data, actions) {  
+        return actions.subscription.create({  
+          /* Creates the subscription */  
+          plan_id: 'P-5BK04551PY2836006NJWPDDA'  
+        });  
+      },  
+      onApprove: function(data, actions) {  
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here  
+      }  
+  }).render('#paypal-button-container-P-5BK04551PY2836006NJWPDDA'); // Renders the PayPal button  
+</script>  <hr>  
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="UTF-8">  
+<title>La Ardiente Diabla</title>  <style>  
+body {  
+  background: #0b0b0b;  
+  color: white;  
+  font-family: Arial, sans-serif;  
+  text-align: center;  
+  margin: 0;  
+  padding: 20px;  
+}  
+  
+h1 {  
+  color: #ff1744;  
+  font-size: 42px;  
+}  
+  
+img {  
+  width: 100%;  
+  max-width: 700px;  
+  border-radius: 20px;  
+  margin: 20px auto;  
+}  
+  
+.caja {  
+  background: #1c1c1c;  
+  padding: 25px;  
+  margin: 20px auto;  
+  max-width: 700px;  
+  border-radius: 20px;  
+}  
+  
+.boton {  
+  display: inline-block;  
+  background: linear-gradient(45deg, #ff1744, #ff5252);  
+  color: white;  
+  padding: 15px 30px;  
+  border-radius: 10px;  
+  text-decoration: none;  
+  font-weight: bold;  
+}  
+  
+.boton:visited {  
+  color: white;  
+}  
+  
+hr {  
+  border: 1px solid #444;  
+  margin: 30px 0;  
+}  
+  
+</style>  </head>  <body>  <nav style="padding:15px;text-align:center;">  
+<a href="#" style="color:white;margin:10px;text-decoration:none;">Inicio</a>  
+<a href="#suscripciones" style="color:white;margin:10px;text-decoration:none;">Suscripciones</a>  
+<a href="#contenido" style="color:white;margin:10px;text-decoration:none;">Contenido</a>  
+</nav>  <h1>La Ardiente Diabla</h1>  <p style="font-size:20px;">  
+Bienvenido a La Ardiente Diabla 🔥<br>  
+Contenido exclusivo y novedades próximamente.  
+</p>  <img src="IMG-20260730-WA0001.jpg" alt="Portada" style="width:100%;max-width:600px;border-radius:15px;">  <p>🔞 Contenido exclusivo para mayores de 18 años</p>  <div class="caja">  
+<h2>Bienvenido</h2>  
+<p>Un espacio de contenido exclusivo y privado.</p>  
+</div>  <div id="suscripciones" class="caja">  
+<h2>🔥 Suscripciones VIP</h2>  <h3>VIP Básico</h3>  
+<p>Acceso a fotos exclusivas.</p>  <div id="paypal-button-container-P-5BK04551PY2836006NJWPDDA"></div>  
+<script src="https://www.paypal.com/sdk/js?client-id=ATg3ISEAvXdRN9_5qgEACGPQWtTGMhysve3wGsIAExRHyNZ-7PLY_Rsb-20sILNRO5zocIHhlZC5awGn&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>  
+<script>  
+  paypal.Buttons({  
+      style: {  
+          shape: 'pill',  
+          color: 'white',  
+          layout: 'horizontal',  
+          label: 'subscribe'  
+      },  
+      createSubscription: function(data, actions) {  
+        return actions.subscription.create({  
+          /* Creates the subscription */  
+          plan_id: 'P-5BK04551PY2836006NJWPDDA'  
+        });  
+      },  
+      onApprove: function(data, actions) {  
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here  
+      }  
+  }).render('#paypal-button-container-P-5BK04551PY2836006NJWPDDA'); // Renders the PayPal button  
+</script>  <hr>  
+<h3>VIP Deluxe</h3>  
+<p>Todo el contenido disponible y acceso anticipado.</p>  <script>  
+paypal.Buttons({  
+    style: {  
+        shape: 'pill',  
+        color: 'blue',  
+        layout: 'horizontal',  
+        label: 'subscribe'  
+    },  
+    createSubscription: function(data, actions) {  
+        return actions.subscription.create({  
+            plan_id: 'P-1TW19488DS417434WNJWPOXA'  
+        });  
+    },  
+    onApprove: function(data, actions) {  
+        alert(data.subscriptionID);  
+    }  
+}).render('#paypal-button-container-P-1TW19488DS417434WNJWPOXA');  
+</script>  <hr>  
+<h3>VIP Premium</h3>  
+  <video controls width="100%">  
+  <source src="VID-20260116-WA0011.mp4" type="video/mp4">  
+  </video>  
+<p>Acceso a fotos y vídeos exclusivos.</p>  
+<div id="paypal-button-container-P-84F62427RC905394DNJWOQMY"></div>  <script>  
+  paypal.Buttons({  
+      style: {  
+          shape: 'rect',  
+          color: 'gold',  
+          layout: 'vertical',  
+          label: 'subscribe'  
+      },  
+      createSubscription: function(data, actions) {  
+        return actions.subscription.create({  
+          plan_id: 'P-84F62427RC905394DNJWOQMY'  
+        });  
+      },  
+      onApprove: function(data, actions) {  
+        alert(data.subscriptionID);  
+      }  
+  }).render('#paypal-button-container-P-84F62427RC905394DNJWOQMY');  
+</script>  <hr>  <div id="paypal-button-container-P-1TW19488DS417434WNJWPOXA"></div>  
+</div>  <div id="contenido" class="caja">  
+<h2>Contenido</h2>  
+<p>Zona reservada para miembros.</p>  
+</div>  </body>  
+<div class="caja">  
+<h2>📸 Últimas novedades</h2>  
+<p>Contenido exclusivo para suscriptores.</p>  <img src="foto1.jpg" alt="Contenido exclusivo">  <p>Próximamente más contenido.</p>  
+</div>  </body>  
+<div class="caja">  
+<h2>📸 Fotos exclusivas</h2>  <p>Zona privada para suscriptores.</p>  <div>  
+<img <img src="IMG-20260731-WA0011.jpg" alt="Foto exclusiva">  
+<img src="foto2.jpg" alt="Foto exclusiva">  
+</div>  </div>  <div class="caja">  
+<h2>🎥 Vídeos exclusivos</h2>  <p>Contenido privado para miembros.</p>  <p>Próximamente más vídeos.</p>  </html>  </html>
