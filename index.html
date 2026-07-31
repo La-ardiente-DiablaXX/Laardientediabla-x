@@ -110,7 +110,31 @@ Contenido exclusivo y novedades próximamente.
 </script>
 
 <hr>
+<h3>VIP Deluxe</h3>
+<p>Todo el contenido disponible y acceso anticipado.</p>
 
+<div id="paypal-button-container-P-1TW19488DS417434WNJWPOXA"></div>
+
+<script>
+paypal.Buttons({
+    style: {
+        shape: 'pill',
+        color: 'blue',
+        layout: 'horizontal',
+        label: 'subscribe'
+    },
+    createSubscription: function(data, actions) {
+        return actions.subscription.create({
+            plan_id: 'P-1TW19488DS417434WNJWPOXA'
+        });
+    },
+    onApprove: function(data, actions) {
+        alert(data.subscriptionID);
+    }
+}).render('#paypal-button-container-P-1TW19488DS417434WNJWPOXA');
+</script>
+
+<hr>
 <h3>VIP Premium</h3>
   <video controls width="100%">
   <source src="VID-20260116-WA0011.mp4" type="video/mp4">
