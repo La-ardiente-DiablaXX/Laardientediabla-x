@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>La Ardiente Diabla</title>
 
 <style>
-
 body{
 background:#0b0b0b;
 color:white;
@@ -34,4 +32,178 @@ font-size:42px;
 margin-top:20px;
 }
 
-  
+.caja{
+background:#1c1c1c;
+max-width:800px;
+margin:25px auto;
+padding:25px;
+border-radius:20px;
+}
+
+img{
+width:100%;
+max-width:700px;
+border-radius:15px;
+margin:15px 0;
+}
+
+video{
+width:100%;
+max-width:700px;
+border-radius:15px;
+}
+
+hr{
+border:1px solid #444;
+margin:30px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="#">Inicio</a>
+<a href="#suscripciones">Suscripciones</a>
+<a href="#contenido">Contenido</a>
+</nav>
+
+<h1>🔥 La Ardiente Diabla 🔥</h1>
+
+<p>
+Contenido exclusivo para mayores de 18 años.
+</p>
+
+<img src="IMG-20260730-WA0001.jpg" alt="Portada">
+
+<div class="caja">
+<h2>Bienvenido</h2>
+<p>
+Accede a fotos y vídeos exclusivos mediante una suscripción.
+</p>
+</div>
+
+<div id="suscripciones" class="caja">
+<h2>🔥 Suscripciones VIP</h2>
+<h3>💎 VIP Básico</h3>
+
+<p>Acceso a fotos exclusivas.</p>
+
+<div id="paypal-button-container-P-5BK04551PY2836006NJWPDDA"></div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=ATg3ISEAvXdRN9_5qgEACGPQWtTGMhysve3wGsIAExRHyNZ-7PLY_Rsb-20sILNRO5zocIHhlZC5awGn&vault=true&intent=subscription"></script>
+
+<script>
+paypal.Buttons({
+style:{
+shape:'pill',
+color:'white',
+layout:'horizontal',
+label:'subscribe'
+},
+createSubscription:function(data,actions){
+return actions.subscription.create({
+plan_id:'P-5BK04551PY2836006NJWPDDA'
+});
+},
+onApprove:function(data){
+alert("Suscripción activada");
+}
+}).render('#paypal-button-container-P-5BK04551PY2836006NJWPDDA');
+</script>
+
+<hr>
+
+<h3>🔥 VIP Deluxe</h3>
+
+<p>Todo el contenido disponible y acceso anticipado.</p>
+
+<div id="paypal-button-container-P-1TW19488DS417434WNJWPOXA"></div>
+
+<script>
+paypal.Buttons({
+style:{
+shape:'pill',
+color:'blue',
+layout:'horizontal',
+label:'subscribe'
+},
+createSubscription:function(data,actions){
+return actions.subscription.create({
+plan_id:'P-1TW19488DS417434WNJWPOXA'
+});
+},
+onApprove:function(data){
+alert("Suscripción activada");
+}
+}).render('#paypal-button-container-P-1TW19488DS417434WNJWPOXA');
+</script>
+
+<hr>
+
+<h3>👑 VIP Premium</h3>
+
+<p>Acceso completo a fotos y vídeos.</p>
+<div id="paypal-button-container-P-84F62427RC905394DNJWOQMY"></div>
+
+<script>
+paypal.Buttons({
+style:{
+shape:'rect',
+color:'gold',
+layout:'vertical',
+label:'subscribe'
+},
+createSubscription:function(data,actions){
+return actions.subscription.create({
+plan_id:'P-84F62427RC905394DNJWOQMY'
+});
+},
+onApprove:function(data){
+alert("Suscripción activada");
+}
+}).render('#paypal-button-container-P-84F62427RC905394DNJWOQMY');
+</script>
+
+</div>
+
+<hr>
+
+<div id="contenido" class="caja">
+
+<h2>📸 Fotos exclusivas</h2>
+
+<p>Zona privada para suscriptores.</p>
+
+<img src="IMG-20260731-WA0011.jpg" alt="Foto exclusiva">
+<img src="foto2.jpg" alt="Foto exclusiva">
+<img src="IMG-20251013-WA0031.jpg" alt="Foto exclusiva">
+<img src="IMG-20260615-WA0008.jpg" alt="Foto exclusiva">
+<img src="IMG-20260615-WA0009.jpg" alt="Foto exclusiva">
+<img src="IMG-20260615-WA0010.jpg" alt="Foto exclusiva">
+
+</div>
+<div class="caja">
+
+<h2>🎥 Vídeos exclusivos</h2>
+
+<p>Contenido privado para miembros.</p>
+
+<video controls>
+<source src="VID-20260116-WA0011.mp4" type="video/mp4">
+Tu navegador no soporta vídeo.
+</video>
+
+</div>
+
+<footer style="margin-top:40px;padding:20px;background:#111;color:#aaa;">
+
+<p>© 2026 La Ardiente Diabla</p>
+
+<p>🔞 Solo para mayores de 18 años</p>
+
+</footer>
+
+</body>
+</html>
