@@ -304,8 +304,9 @@ const supabase = window.supabase.createClient(
   supabaseUrl,
   supabaseKey
 );
-async function registrar() {
-  alert("entró en registrar");
+
+window.registrar = async function() {
+
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
@@ -316,9 +317,11 @@ async function registrar() {
 
   document.getElementById("mensaje").textContent =
     error ? error.message : "Registro realizado. Revisa tu correo.";
-}
 
-async function entrar() {
+};
+
+window.entrar = async function() {
+
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
@@ -329,7 +332,9 @@ async function entrar() {
 
   document.getElementById("mensaje").textContent =
     error ? error.message : "Inicio de sesión correcto.";
-    }
+
+};
+
 console.log("Supabase conectado");
 </script>
 </body>
