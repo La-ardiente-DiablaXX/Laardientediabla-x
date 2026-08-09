@@ -150,51 +150,15 @@ Información y solicitudes bajo disponibilidad.
 
 <p>Todo el contenido disponible y acceso anticipado.</p>
 
-<div id="paypal-button-container-P-1TW19488DS417434WNJWPOXA"></div>
-
-<script>
-paypal.Buttons({
-style:{
-shape:'pill',
-color:'blue',
-layout:'horizontal',
-label:'subscribe'
-},
-createSubscription:function(data,actions){
-return actions.subscription.create({
-plan_id:'P-1TW19488DS417434WNJWPOXA'
-});
-},
-onApprove:function(data){
-alert("Suscripción activada");
-}
-}).render('#paypal-button-container-P-1TW19488DS417434WNJWPOXA');
-</script>
-
-<hr>
+<
 
 <h3>👑 VIP Premium</h3>
 
 <p>Acceso completo a fotos y vídeos.</p>
-<div id="paypal-button-container-P-84F62427RC905394DNJWOQMY"></div>
+
 
 <script>
-paypal.Buttons({
-style:{
-shape:'rect',
-color:'gold',
-layout:'vertical',
-label:'subscribe'
-},
-createSubscription:function(data,actions){
-return actions.subscription.create({
-plan_id:'P-84F62427RC905394DNJWOQMY'
-});
-},
-onApprove:function(data){
-alert("Suscripción activada");
-}
-}).render('#paypal-button-container-P-84F62427RC905394DNJWOQMY');
+
 </script>
 
 </div>
