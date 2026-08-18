@@ -59,10 +59,11 @@ margin:30px 0;
 }
 </style>
   
-
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#ff1744">
 </head>
-
 <body>
+
 
 <nav>
 <a href="#">Inicio</a>
@@ -296,5 +297,10 @@ console.log("Supabase conectado");
 </a>
   </section>
   </section>
+  <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./sw.js");
+}
+  </script>
 </body>
 </html>
