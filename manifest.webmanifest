@@ -1,1 +1,16 @@
-
+{
+  "name": "La Ardiente Diabla-X",
+  "short_name": "Diabla-X",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b0b0b",
+  "theme_color": "#ff1744",
+  "icons": [
+    {
+      "src": "./IMG_20260818_211957_(6_x_4_pulgada).jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
