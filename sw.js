@@ -1,4 +1,4 @@
-const CACHE_NAME = "diabla-x-app-v2";
+const CACHE_NAME = "diabla-x-app-v3";
 
 const ARCHIVOS = [
   "./",
