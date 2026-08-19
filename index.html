@@ -383,31 +383,27 @@ if ("serviceWorker" in navigator) {
   </script>
   
 <script>
-let instalacionPendiente;
+let instalacionPendiente = null;
 
 const boton = document.getElementById("instalar-app");
 
 window.addEventListener("beforeinstallprompt", (evento) => {
   evento.preventDefault();
   instalacionPendiente = evento;
-
   boton.style.display = "block";
   boton.textContent = "📲 Instalar App Diabla-X";
 });
 
 window.addEventListener("appinstalled", () => {
   instalacionPendiente = null;
-
-  boton.textContent = "✅ App ya instalada";
+  boton.textContent = "✅ App instalada correctamente";
   boton.disabled = true;
   boton.style.opacity = "0.7";
 });
 
 boton.addEventListener("click", async () => {
   if (!instalacionPendiente) {
-    boton.textContent = "✅ App ya instalada";
-    boton.disabled = true;
-    boton.style.opacity = "0.7";
+    boton.textContent = "📲 Instalar App Diabla-X";
     return;
   }
 
@@ -416,9 +412,7 @@ boton.addEventListener("click", async () => {
   const resultado = await instalacionPendiente.userChoice;
 
   if (resultado.outcome === "accepted") {
-    boton.textContent = "✅ App instalada";
-    boton.disabled = true;
-    boton.style.opacity = "0.7";
+    boton.textContent = "⏳ Instalando...";
   }
 
   instalacionPendiente = null;
