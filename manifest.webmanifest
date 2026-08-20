@@ -1,6 +1,7 @@
 {
   "name": "Diabla-X",
   "short_name": "Diabla-X",
+"id": "./",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
