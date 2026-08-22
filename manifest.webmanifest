@@ -9,15 +9,15 @@
   "theme_color": "#ff1744",
   "icons": [
     {
-      "src": "/Laardientediabla-x/logo192.jpg",
+      "src": "/Laardientediabla-x/192x192.png",
       "sizes": "192x192",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/Laardientediabla-x/logo512.jpg",
+      "src": "/Laardientediabla-x/logo512.png",
       "sizes": "512x512",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any"
     }
   ]
