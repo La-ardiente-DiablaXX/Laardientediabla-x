@@ -482,6 +482,7 @@ window.addEventListener("beforeinstallprompt", (evento) => {
   evento.preventDefault();
   instalacionPendiente = evento;
   boton.style.display = "block";
+  boton.disabled = false;
   boton.textContent = "📲 Instalar App Diabla-X";
 });
 
@@ -493,21 +494,21 @@ window.addEventListener("appinstalled", () => {
 });
 
 boton.addEventListener("click", async () => {
-  if (!instalacionPendiente) {
-    boton.textContent = "📲 Instalar App Diabla-X";
+  if (instalacionPendiente) {
+    instalacionPendiente.prompt();
+
+    const resultado = await instalacionPendiente.userChoice;
+
+    if (resultado.outcome === "accepted") {
+      boton.textContent = "⏳ Instalando...";
+    }
+
+    instalacionPendiente = null;
     return;
   }
 
-  instalacionPendiente.prompt();
-
-  const resultado = await instalacionPendiente.userChoice;
-
-  if (resultado.outcome === "accepted") {
-    boton.textContent = "⏳ Instalando...";
-  }
-
-  instalacionPendiente = null;
+  alert("Chrome todavía no ha habilitado la instalación de la app. Abre el menú ⋮ de Chrome y busca «Instalar aplicación».");
 });
-</script>
+  </script>
 </body>
 </html>
