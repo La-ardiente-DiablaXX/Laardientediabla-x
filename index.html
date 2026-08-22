@@ -507,8 +507,9 @@ boton.addEventListener("click", async () => {
     return;
   }
 
-  alert("Chrome todavía no ha habilitado la instalación de la app. Abre el menú ⋮ de Chrome y busca «Instalar aplicación».");
-});
-  </script>
+  if (!instalacionPendiente) {
+  alert("Chrome no ha habilitado la instalación automática. Pulsa ⋮ en Chrome y selecciona «Instalar y crear acceso directo».");
+  return;
+  }
 </body>
 </html>
